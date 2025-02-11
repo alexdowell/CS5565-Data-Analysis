@@ -1,0 +1,25 @@
+d1 <- read.csv("Advertising.csv", na.strings = "?", stringsAsFactors = T)
+d2 <- read.csv("Credit.csv", na.strings = "?", stringsAsFactors = T)
+d3 <- read.csv("Income1.csv", na.strings = "?", stringsAsFactors = T)
+#TV = advertising[,2]
+#radio = advertising[,3]
+#newspaper = advertising[,4]
+#sales = advertising[,5]
+
+pairs(d1)
+plot(d1[,2], d1[,5], col = "blue", xlab = "Advertising", ylab = "Sales", main = "Advertising vs. Sales")
+points(d1[,3], d1[,5], col = "green")
+points(d1[,4], d1[,5], col = "red")
+legend("topright", legend=c("TV Advertising", "Radio Advertising", "Newspaper Advertising"), col=c("blue", "green", "red"), lty=1)
+TV_advertising = d1[,2]
+hist(TV_advertising)
+
+pairs(d2)
+plot(d2[,2], d2[,5], col = "orange", xlab = "Credit Limit", ylab = "Age", main = "Credit Limit vs. Age")
+Education_Of_Creditors = d2[,6]
+hist(Education_Of_Creditors)
+
+pairs(d3)
+plot(d3[,2], d3[,3], col = "purple", xlab = "Education", ylab = "Income", main = "Education vs Income")
+Income = d3[,3]
+hist(Income)

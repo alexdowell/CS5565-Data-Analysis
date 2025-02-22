@@ -1,4 +1,4 @@
-# CS5565-Data-Analysis
+# CS5565: Statistical Data Analysis
 
 ## Description
 This repository contains datasets and R project files for statistical analysis and machine learning tasks, primarily used in **CS5565** coursework. The datasets include information on credit, income, advertising, and more. The repository also contains an R project file and associated history/log files for reproducibility.
